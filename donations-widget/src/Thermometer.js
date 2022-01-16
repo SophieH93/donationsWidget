@@ -116,7 +116,7 @@ const Thermometer = (props) => {
           </label>
         </form>
         <button className="give-btn" onClick={() => handleDonation()}>
-          PLEASE GIVE
+          PLEASE DONATE!
         </button>
         <Modal
           onClick={handleModal}
