@@ -22,7 +22,7 @@ function MainCard(props) {
       </div>
       <div className="card-body">
         <h4 className="title">{data.title}</h4>
-        <Thermometer goal={data.goal} name={data.name} raised={data.raised} />
+        <Thermometer goal={data.goal} title={data.title} raised={data.raised} />
       </div>
     </div>
   );
