@@ -94,6 +94,7 @@ form {
             height: 100%;
             border-radius: 0 20px 20px 0;
             transition: 0.25s ease;
+            z-index: 99;
           }
         }
       }
@@ -128,7 +129,6 @@ form {
         font-size: $large-text;
         width: 85%;
         margin: 0 auto;
-
         .donation {
           color: white;
           font-size: 24px;
@@ -137,6 +137,7 @@ form {
         .donation-thin {
           color: white;
           font-size: 20px;
+
         }
       }
     }
@@ -153,6 +154,7 @@ form {
       border: none;
       font-family: 'Karla', sans-serif;
       box-shadow: $card-box-shadow;
+      
       &:hover {
         background-color: $button-bg-hover;
         color: $button-text-hover;
