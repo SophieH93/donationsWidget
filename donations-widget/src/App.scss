@@ -52,6 +52,7 @@ form {
     .title {
       font-weight: $font-weight-bold;
       margin: 16px 10px;
+      text-align: center;
     }
     .donation-amount {
       display: flex;
@@ -70,6 +71,7 @@ form {
         color: $primary-color;
         font-weight: $font-weight-bold;
         font-size: $large-text;
+        text-align: center;
       }
 
       .progress {
