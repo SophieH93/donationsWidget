@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Modal from "./Modal";
 
 const Thermometer = (props) => {
   const [goal, setGoal] = useState(props.goal);
@@ -40,7 +41,13 @@ const Thermometer = (props) => {
             <div className="progress-labels">
               <div>0%</div>
               <div>Raised</div>
-              <div>100%</div>
+              {raised < goal ? (
+                <div>100%</div>
+              ) : (
+                <div style={{ color: "green", backgroundColor: "orange" }}>
+                  100%
+                </div>
+              )}
             </div>
             <div className="progress-bar">
               <div
@@ -111,6 +118,13 @@ const Thermometer = (props) => {
         <button className="give-btn" onClick={() => handleDonation()}>
           PLEASE GIVE
         </button>
+        <Modal
+          onClick={handleModal}
+          status={modal}
+          raised={raised}
+          value={value}
+          data={props}
+        />
       </>
     </div>
   );
